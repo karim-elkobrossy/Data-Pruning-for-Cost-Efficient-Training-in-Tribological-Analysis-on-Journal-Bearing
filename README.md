@@ -24,6 +24,26 @@ Each algorithm, alongside random sampling and full dataset usage, produces a red
 - **Enhanced Sampling Techniques for Regression Autoencoder**: While the regression autoencoder employed a stratified sampling technique with promising results, exploring more sophisticated sampling methods tailored to the problem, such as farthest point sampling, could potentially yield even better outcomes by covering a wider range of instances.
 - **Comprehensive Coverage of Data Reduction Percentages**: The research did not fully explore the range of data reduction percentages when comparing the regression autoencoder and random sampling techniques. Moreover, other algorithms mentioned were not tested across various reduction percentages. Future studies should evaluate how different algorithms perform across a wide range of data reduction percentages, providing insights into their robustness and effectiveness under varying conditions.
 
+## Files
+**Jupyter notebooks**:
+
+Pipeline.ipynb -> Contains all the algorithms' code, training and validation for the first evaluation method (Comparison between all algorithms)
+
+Reduction_percentage.ipynb -> Contains the second evaluation method between regression autoencoder and random sampling
+
+Adaptive_DBSCAN.ipynb -> contains the DBSCAN code along with visualization of the algorithm's reduced subset
+
+Regression_Selesup.ipynb -> Contains the selesup code along with visualization of the algorithm's reduced subset
+
+Regression_Autoencoder.ipynb -> Contains the code for regression autoencoder, the training of the autoencoder, produced embeddings and extra visualizations
+
+
+**CSV files**
+
+journal_bearing.csv
+Note: Access is needed from Samuel Cartwright to access this dataset
+test_DBSCAN.csv -> Contains a subset of the full dataset to visualize using Adaptive_DBSCAN.ipynb
+
 ## Technologies Used
 - **AWS**: For training, testing and evaluating the models
 - **Sklearn**
